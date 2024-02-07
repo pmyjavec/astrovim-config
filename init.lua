@@ -16,7 +16,16 @@ return {
     {"tpope/vim-surround",
       lazy = false
     },
+    {"tpope/vim-rhubarb",
+      lazy = false
+    },
     {"easymotion/vim-easymotion",
+      lazy = false
+    },
+    {"preservim/tagbar",
+      lazy = false
+    },
+    {"folke/zen-mode.nvim",
       lazy = false
     },
   },
@@ -29,6 +38,7 @@ return {
     -- Set key bindings
     map("n", "<C-Alt>", "<cmd>ToggleTerm<CR>", opts)
     map("n", "<C-L>", "<cmd>ToggleTerm<CR>", opts)
+    map("n", "<Leader>r", "<cmd>Tagbar<CR>", opts)
   end,
  
 }
